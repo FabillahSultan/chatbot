@@ -1,0 +1,142 @@
+{"intents": 
+[
+    {
+        "tag": "Perkenalan",
+        "patterns": ["Halo", "Selamat", "Hai", "Hi", "Hello", "Pagi", "Siang", "Sore", "Malam", "Assalamualaikum"],
+        "responses": ["Selamat datang di Gooutdoor - Chatbot Talks Gear. Terima kasih atas kesediaan Anda menggunakan jasa layanan kami. Perkenalkan, saya Gooutdoor - Chatbot Talks Gear, yang akan menemani Anda dalam membantu merekomendasikan perlengkapan Anda pada aktivitas outdoor. \n untuk memulai silahkan ketik 'Mulai'"],
+        "context": ["Mulai"]
+    },
+    {
+        "tag": "Start",
+        "patterns": ["Mulai"], 
+        "responses": ["Baik, terima kasih. Layanan Gooutdoor - Chatbot Talks Gear yang dapat berikan untuk Anda? \n1. Rekomedasi perlengkapan \n2. Cara Penggunaan Alat \n3. Fungsi Perlengkapan \n4. Tempat di Wilayah Tegal \n5. Tentang Penyewaan"],
+        "context": ["Rekomedasi perlengkapan", "Cara Penggunaan Alat", "Fungsi Perlengkapan", "Rekomendasi Tempat di Wilayah Tegal", "Tentang Penyewaan"]
+    },
+    {
+        "tag": "Menu Metode 1",
+        "patterns": ["Rekomedasi perlengkapan", "Rekomedasi", "perlengkapan"],
+        "responses": ["Untuk memenuhi aktivitas outdoor Anda inginkan, aktivitas dimanakah yang ingin anda lakukan? \n1. Hutan \n2. Pantai"],
+        "context": ["Hutan", "Pantai"]
+    },
+    {
+        "tag": "Hutan",
+        "patterns": ["Hutan"], 
+        "responses": ["Untuk memenuhi aktivitas outdoor Anda di Hutan direkomndasikan untuk membawa Tenda, Matras, Kompor kotak, Flysheet, nesting/cooking set. untuk berapa orang sekiranya ? \n1. 1-2 orang \n2. 3-5 orang \n3. 6-10"],
+        "context": ["1-2 orang", "3-5 orang", "6-10"]
+    },
+    {
+        "tag": "Pantai",
+        "patterns": ["Pantai"], 
+        "responses": ["Untuk memenuhi aktivitas outdoor Anda di Pantai direkomndasikan untuk membawa Tenda, Matras, Kompor kotak, Flysheet, nesting/cooking set. untuk berapa orang sekiranya ? \n1. 1-2 orang \n2. 3-5 orang \n3. 6-10"],
+        "context": ["1-2 orang", "3-5 orang", "6-10"]
+    },  
+    {
+        "tag": "1-2 orang",
+        "patterns": ["1-2 orang", "1", "2"], 
+        "responses": ["Baik, terima kasih atas kesediaan Anda memberikan informasi banyaknya orang, berikut kami rekomendasikan perlengkapan untuk 1-2 orang. \n1. 1 buah Tenda Kapasitas 1-2 \n2. 1 buah Kompor kotak \n3. 3 buah Matras \n4. 1 buah Nesting/Cooking set \n5. 1 buah Flysheet"],
+        "context": [""]
+    },
+    {
+        "tag": "3-5 orang",
+        "patterns": ["3-5 orang", "3", "4", "5"], 
+        "responses": ["Baik, terima kasih atas kesediaan Anda memberikan informasi banyaknya orang, berikut kami rekomendasikan perlengkapan untuk 4-5 orang. \n1. 1 buah Tenda Kapasitas 4-5 lebih baik \n2. 2 buah Kompor kotak \n3. 6 buah Matras \n4. 1 buah Nesting/Cooking set \n5. 1 buah Flysheet"],
+        "context": [""]
+    },
+    {
+        "tag": "6-10 orang",
+        "patterns": ["6-10 orang", "6", "7", "8", "9", "10"], 
+        "responses": ["Baik, terima kasih atas kesediaan Anda memberikan informasi banyaknya orang, berikut kami rekomendasikan perlengkapan untuk 6-10 orang. \n1. 2 buah Tenda Kapasitas 4-5 lebih baik atau 1 buah tenda atau \n1 buah tenda kapasitas 6-7 orang dan 1 buah tenda kapasitas 1-2 orang \n2. 3 buah Kompor kotak \n3. 10 buah Matras \n4. 2 buah Nesting/Cooking set \n5. 1 buah Flysheet"],
+        "context": [""]
+    },
+    {
+        "tag": "Menu Metode 2",
+        "patterns": ["Cara Penggunaan Alat", "cara", "penggunaan alat"],
+        "responses": ["Cara penggunaan alat yang benar kami berikan tutorial dengan link video yang kami sertakan \n1. Tenda kapasitas 1-2 : https://www.youtube.com/watch?v=AWMI6wZ3tyY \n2. Tenda Kapasitas 3-5 : https://www.youtube.com/watch?v=qFHVPiV-TA4 \n3. Tenda Kapasitas 6-10 : https://www.youtube.com/watch?v=Tlp7c3FRAEM \n4. Flysheet : https://www.youtube.com/watch?v=Z2xe-W75CNk \n5. Kompor Kotak : https://www.youtube.com/watch?v=2ZSEl23pABU \n6. Kompor Besar : https://www.youtube.com/watch?v=8rAYVCIcuXs \n7. matras : https://www.youtube.com/watch?v=PKy93zwz7T0"],
+        "context": [""]
+    },
+    {
+        "tag": "Menu Metode 3",
+        "patterns": ["Fungsi Perlengkapan", "Funsi"],
+        "responses": ["Berikut kami berikan fungsi dari beberapa perlengkapan aktivitas outdoor \n1. Tenda \n2. Flysheet \n3. Kompor \n4. Tas Carier \n5. Nesting/Cooking set \n6. Matras"],
+        "context": ["Tenda", "Flysheet", "Kompor", "Tas Carier", "Nesting/Cooking set", "Matras"]
+    },    
+    {
+        "tag": "Tenda",
+        "patterns": ["Tenda", "Fungsi Tenda"], 
+        "responses": ["Sebagai tempat beristirahat Sebagai tempat berteduh saaat panas menjelang atau hujan melanda Sebagai tempat membaringkan tubuh (tidur). Sebagai tempat berlindung dari binatang buas dan binatang yang berbahaya lainnya."],
+        "context": [""]
+    },
+    {
+        "tag": "Flysheet",
+        "patterns": ["Flysheet", "Fungsi Flysheet"], 
+        "responses": ["Fungsi Flysheet saat aktivitas outdoot antara lain : \n1. Sebagai alas tenda karena tahan air \n2. Menahan angin yang ada di pegunungan \n3. Melapisi tenda jika terjadi badai.Sebagai penahan angin agar suhu di dalam tenda tak terlalu dingin"],
+        "context": [""]
+    },
+    {
+        "tag": "Kompor",
+        "patterns": ["Kompor", "Fungsi Kompor"], 
+        "responses": ["Fungsi kompor yang utama adalah sebagai alat masak outdoor. Jadi, sangat pas kamu bawa sebagai perlengkapan masak saat liburan ke pantai, camping di gunung, atau sekedar piknik di alam."],
+        "context": [""]
+    },
+    {
+        "tag": "Nesting/Cooking set",
+        "patterns": ["Nesting/Cooking set", "Nesting", "Cooking set", "Fungsi Nesting/Cooking set", "Fungsi Nesting", "Cooking set"], 
+        "responses": ["perangkat yang dirancang khusus untuk memudahkan proses memasak saat berkemah. Nesting/Cooking set direkomendasikan karena ringan dan mudah dibawa, sering kali dapat disusun menjadi satu paket yang ringkas, sehingga tidak memakan banyak ruang di dalam ransel."],
+        "context": [""]
+    },
+    {
+        "tag": "Matras",
+        "patterns": ["Fungsi Matras", "Matras"], 
+        "responses": ["Matras memiliki beberapa fungsi penting yang berkontribusi pada kenyamanan dan keselamatan selama berkemah. Berikut adalah beberapa fungsi utama dari matras camping: \n1. Memberikan Kenyamanan Tidur \n2. Isolasi dari Tanah Dingin \n3. Mengurangi Ketidakrataan Tanah"],
+        "context": [""]
+    },
+    {
+        "tag": "Tas Carier",
+        "patterns": ["Fungsi Tas Carier", "Tas Carier"], 
+        "responses": ["Tas carrier memberikan kapasitas penyimpanan yang luas, memungkinkan untuk bisa membawa peralatan esensial seperti tenda, sleeping bag, pakaian cadangan, dan perlengkapan dapur dengan mudah."],
+        "context": [""]
+    },
+    {
+        "tag": "Menu Metode 4",
+        "patterns": ["Rekomendasi Tempat di Wilayah Tegal", "Rekomendasi Tempat", "Tempat di Wilayah Tegal", "Tegal"],
+        "responses": ["Berikut kami berikan tempat rekomendasi aktivitas outdoor \n1. Permadi Jungle Campgroud (Bumijawa) \n2. Rumah Angsa (Bumijawa) \n3. Bukit Bintang (Bumijawa) \n4. Lembah Rembulan (Bumijawa)  \n5. Prabalintang (Balapulang) \n6. Pantai Alam Indah (Kota Tegal)"],
+        "context": [""]
+    },
+    {
+        "tag": "Menu Metode 5",
+        "patterns": ["Tentang Penyewaan", "Tentang", "Penyewaan"],
+        "responses": ["Berikut mekanisme tentang penyewaan di aplikasi Gooutdoor \n1. Harga Peralatan \n2. Pesan Peralatan \n3. Metode Pembayaran \n4. Layanan Pelanggan"],
+        "context": ["Harga sewa Peralatan", "Pesan Peralatan", "Metode Pembayaran", "Layanan Pelanggan"]
+    },
+    {
+        "tag": "Harga sewa Peralatan",
+        "patterns": ["Harga sewa Peralatan", "Harga", "sewa", "sewa peralatan"], 
+        "responses": ["Untuk mengetahui harga sewa peralatan, silakan kunjungi halaman home di website Gooutdoor."],
+        "context": [""]
+    },
+    {
+        "tag": "Pesan Peralatan",
+        "patterns": ["Pesan Peralatan", "pesan","cara sewa", "cara pesan"], 
+        "responses": ["Untuk memesan peralatan, Anda dapat mengunjungi situs web kami dan melakukan pemesanan melalui halaman home di website Gooutdoor."],
+        "context": [""]
+    },
+    {
+        "tag": "Metode Pembayaran",
+        "patterns": ["Metode Pembayaran", "Metode","Pembayaran"], 
+        "responses": ["Untuk metode pembayaran sewa di Gooutdoor bisa menggunakan midtrans"],
+        "context": [""]
+    },
+    {
+        "tag": "Layanan Pelanggan",
+        "patterns": ["Layanan Pelanggan", "Layanan","Pelanggan", "Kontak layanan pelanggan"], 
+        "responses": ["Anda dapat menghubungi layanan pelanggan kami melalui nomor telepon yang tertera di situs web kami, atau melalui email di alamat gooutdoor@gmail.com."],
+        "context": [""]
+    },     
+    {
+        "tag": "Farewell",
+        "patterns": ["Terima kasih", "Baik", "Sekian", "Oke", "Ok", "Cukup"],
+        "responses": ["Terimakasih telah menggunakan lawbot."],
+        "context": [""]
+    }
+]
+}
